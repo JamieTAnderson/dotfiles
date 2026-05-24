@@ -32,6 +32,7 @@ This config uses:
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) for syntax highlighting
 - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig), Mason, and `mason-lspconfig` for LSP setup
 - `nvim-cmp` for completion
+- `nvim-autopairs` for automatic closing pairs
 - Telescope for finding files and searching text
 - Gitsigns for Git gutter markers
 

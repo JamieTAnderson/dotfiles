@@ -63,20 +63,24 @@ Pinned plugin versions live in lazy-lock.json.
     Purpose: Connects LuaSnip snippets to nvim-cmp.
     Config: lua/plugins/completion.lua
 
-13. neovim/nvim-lspconfig
+13. windwp/nvim-autopairs
+    Purpose: Automatically inserts matching closing characters for pairs like (), [], {}, quotes, and backticks.
+    Config: lua/plugins/autopairs.lua
+
+14. neovim/nvim-lspconfig
     Purpose: Provides LSP server configuration defaults.
     Config: lua/plugins/lsp.lua
 
-14. mason-org/mason.nvim
+15. mason-org/mason.nvim
     Purpose: Installs external language servers and developer tools.
     Useful command: :Mason
     Config: lua/plugins/lsp.lua
 
-15. mason-org/mason-lspconfig.nvim
+16. mason-org/mason-lspconfig.nvim
     Purpose: Connects Mason-installed language servers to Neovim LSP.
     Config: lua/plugins/lsp.lua
 
-16. nvim-treesitter/nvim-treesitter
+17. nvim-treesitter/nvim-treesitter
     Purpose: Installs Treesitter parsers and query files for syntax highlighting and indentation.
     Useful command: :TSInstallConfigured
     Config: lua/plugins/treesitter.lua
@@ -124,4 +128,3 @@ Useful commands:
 3. :Mason manages language servers and external tools.
 4. :TSInstallConfigured installs the configured Treesitter parsers.
 5. :checkhealth checks Neovim and plugin health.
-
