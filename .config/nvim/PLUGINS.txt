@@ -1,0 +1,127 @@
+Neovim plugin list
+
+Plugins are managed by lazy.nvim.
+Pinned plugin versions live in lazy-lock.json.
+
+1. folke/lazy.nvim
+   Purpose: Bootstraps and manages all plugins.
+   Useful command: :Lazy
+   Config: lua/config/lazy.lua
+
+2. folke/tokyonight.nvim
+   Purpose: Provides the colorscheme loaded at startup.
+   Config: lua/plugins/colorscheme.lua
+
+3. folke/which-key.nvim
+   Purpose: Shows available keybindings after pressing a prefix like <leader>.
+   Config: lua/plugins/which-key.lua
+
+4. nvim-telescope/telescope.nvim
+   Purpose: Fuzzy finder for files, text search, buffers, and help tags.
+   Config: lua/plugins/telescope.lua
+   Keymaps:
+     <leader>ff finds files.
+     <leader>fg searches text with live grep.
+     <leader>fb lists open buffers.
+     <leader>fh searches help tags.
+
+5. nvim-lua/plenary.nvim
+   Purpose: Utility library required by Telescope.
+   Config: lua/plugins/telescope.lua
+
+6. lewis6991/gitsigns.nvim
+   Purpose: Shows Git changes in the sign column.
+   Config: lua/plugins/git.lua
+
+7. hrsh7th/nvim-cmp
+   Purpose: Completion menu engine.
+   Config: lua/plugins/completion.lua
+   Keymaps:
+     <C-Space> opens completion.
+     <C-e> closes completion.
+     <CR> confirms the selected completion.
+     <Tab> selects the next completion item or jumps through a snippet.
+     <S-Tab> selects the previous completion item or jumps backward through a snippet.
+
+8. hrsh7th/cmp-nvim-lsp
+   Purpose: Adds LSP completion results to nvim-cmp.
+   Config: lua/plugins/completion.lua and lua/plugins/lsp.lua
+
+9. hrsh7th/cmp-buffer
+   Purpose: Adds words from the current buffer to completion.
+   Config: lua/plugins/completion.lua
+
+10. hrsh7th/cmp-path
+    Purpose: Adds filesystem paths to completion.
+    Config: lua/plugins/completion.lua
+
+11. L3MON4D3/LuaSnip
+    Purpose: Snippet engine used by completion.
+    Config: lua/plugins/completion.lua
+
+12. saadparwaiz1/cmp_luasnip
+    Purpose: Connects LuaSnip snippets to nvim-cmp.
+    Config: lua/plugins/completion.lua
+
+13. neovim/nvim-lspconfig
+    Purpose: Provides LSP server configuration defaults.
+    Config: lua/plugins/lsp.lua
+
+14. mason-org/mason.nvim
+    Purpose: Installs external language servers and developer tools.
+    Useful command: :Mason
+    Config: lua/plugins/lsp.lua
+
+15. mason-org/mason-lspconfig.nvim
+    Purpose: Connects Mason-installed language servers to Neovim LSP.
+    Config: lua/plugins/lsp.lua
+
+16. nvim-treesitter/nvim-treesitter
+    Purpose: Installs Treesitter parsers and query files for syntax highlighting and indentation.
+    Useful command: :TSInstallConfigured
+    Config: lua/plugins/treesitter.lua
+
+Configured LSP servers:
+
+1. lua_ls for Lua.
+2. ts_ls for TypeScript and JavaScript.
+3. pyright for Python.
+4. gopls for Go.
+5. rust_analyzer for Rust.
+6. bashls for Bash.
+7. jsonls for JSON.
+8. yamlls for YAML.
+
+gopls is only auto-installed when the go executable is available.
+
+Configured Treesitter parsers:
+
+1. bash
+2. css
+3. go
+4. gomod
+5. gosum
+6. html
+7. javascript
+8. json
+9. lua
+10. markdown
+11. markdown_inline
+12. python
+13. query
+14. rust
+15. toml
+16. tsx
+17. typescript
+18. vim
+19. vimdoc
+20. yaml
+
+Useful commands:
+
+1. :PluginDocs opens this plugin inventory.
+2. :Lazy manages plugins.
+3. :Mason manages language servers and external tools.
+4. :TSInstallConfigured installs the configured Treesitter parsers.
+5. :checkhealth checks Neovim and plugin health.
+

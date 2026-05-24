@@ -35,7 +35,7 @@ This config uses:
 - Telescope for finding files and searching text
 - Gitsigns for Git gutter markers
 
-See `.config/nvim/PLUGINS.md` for the full plugin list and what each plugin does.
+See `.config/nvim/PLUGINS.txt` for the full plugin list and what each plugin does.
 
 Recommended command line tools:
 
