@@ -34,16 +34,25 @@ return {
         },
         ts_ls = {},
         pyright = {},
-        gopls = {},
+        gopls = {
+          mason = vim.fn.executable("go") == 1,
+        },
         rust_analyzer = {},
         bashls = {},
         jsonls = {},
         yamlls = {},
       }
 
-      require("mason").setup()
+      local ensure_installed = {}
 
       for server_name, server_opts in pairs(servers) do
+        local should_install = server_opts.mason ~= false
+        server_opts.mason = nil
+
+        if should_install then
+          ensure_installed[#ensure_installed + 1] = server_name
+        end
+
         server_opts = vim.tbl_deep_extend("force", {}, server_opts, {
           capabilities = capabilities,
         })
@@ -51,7 +60,7 @@ return {
       end
 
       require("mason-lspconfig").setup({
-        ensure_installed = vim.tbl_keys(servers),
+        ensure_installed = ensure_installed,
         automatic_enable = true,
       })
 

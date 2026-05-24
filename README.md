@@ -68,6 +68,9 @@ Language servers currently configured:
 - JSON: `jsonls`
 - YAML: `yamlls`
 
+`gopls` is only auto-installed when the `go` executable is available. Install Go
+first, then open Neovim and run `:MasonInstall gopls` or `:Lazy sync`.
+
 Install additional language servers from `:Mason`, then add them in `.config/nvim/lua/plugins/lsp.lua`.
 
 ## Layout
