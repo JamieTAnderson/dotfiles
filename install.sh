@@ -26,5 +26,6 @@ link_path() {
 }
 
 link_path "$dotfiles_dir/.config/nvim" "$config_home/nvim"
+link_path "$dotfiles_dir/.bash_aliases" "$HOME/.bash_aliases"
 
-printf '\nDone. Open Neovim with: nvim\n'
+printf '\nDone. Open Neovim with: nvim or vi\n'

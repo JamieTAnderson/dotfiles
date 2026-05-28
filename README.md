@@ -19,8 +19,8 @@ If you are already in this repo:
 ./install.sh
 ```
 
-The installer backs up an existing `~/.config/nvim` before linking this repo's
-Neovim config.
+The installer backs up existing targets before linking this repo's Neovim config
+and shell aliases.
 
 ## Neovim
 
@@ -81,6 +81,7 @@ Install additional language servers from `:Mason`, then add them in `.config/nvi
 
 ```text
 .
+├── .bash_aliases    # Bash aliases
 ├── .config/nvim/   # Neovim config
 ├── install.sh      # symlink installer
 └── README.md
