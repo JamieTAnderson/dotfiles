@@ -35,6 +35,8 @@ This config uses:
 - `nvim-autopairs` for automatic closing pairs
 - Telescope for finding files and searching text
 - Gitsigns for Git gutter markers
+- [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim) for a file explorer
+- local `pi-inline.nvim` for asking Pi questions from Neovim
 
 See `.config/nvim/PLUGINS.txt` for the full plugin list and what each plugin does.
 
@@ -43,6 +45,7 @@ Recommended command line tools:
 - `git`
 - `ripgrep` for Telescope live grep
 - `tree-sitter` CLI 0.26.1 or newer for Treesitter parser installs
+- `pi` for Pi Inline
 - a C compiler for Treesitter parser builds
 
 On first launch, lazy.nvim will bootstrap itself and install plugins. If the
@@ -60,6 +63,9 @@ Otherwise, install the CLI and run `:TSInstallConfigured`.
 - `<leader>fg` - search text
 - `<leader>fb` - list open buffers
 - `<leader>fh` - search help tags
+- `<leader>n` - toggle Neo-tree
+- `<leader>nf` - reveal the current file in Neo-tree
+- `:Pi` / `<leader>pp` - open Pi Inline
 
 Language servers currently configured:
 
