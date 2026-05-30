@@ -26,8 +26,8 @@ Pinned plugin versions live in lazy-lock.json.
      <leader>fh searches help tags.
 
 5. nvim-lua/plenary.nvim
-   Purpose: Utility library required by Telescope.
-   Config: lua/plugins/telescope.lua
+   Purpose: Utility library required by Telescope and Neo-tree.
+   Config: lua/plugins/telescope.lua and lua/plugins/neo-tree.lua
 
 6. lewis6991/gitsigns.nvim
    Purpose: Shows Git changes in the sign column.
@@ -85,6 +85,35 @@ Pinned plugin versions live in lazy-lock.json.
     Useful command: :TSInstallConfigured
     Config: lua/plugins/treesitter.lua
 
+18. nvim-neo-tree/neo-tree.nvim
+    Purpose: Provides a sidebar file explorer with filesystem, buffer, and Git status views.
+    Useful command: :Neotree
+    Config: lua/plugins/neo-tree.lua
+    Keymaps:
+      <leader>n toggles the file explorer.
+      <leader>nf reveals the current file.
+      <leader>ng opens the Git status view.
+      <leader>nb opens the buffer view.
+
+19. MunifTanjim/nui.nvim
+    Purpose: UI components required by Neo-tree.
+    Config: lua/plugins/neo-tree.lua
+
+20. nvim-tree/nvim-web-devicons
+    Purpose: Filetype icons used by Neo-tree.
+    Config: lua/plugins/neo-tree.lua
+
+21. pi-inline.nvim
+    Purpose: Asks the Pi coding agent questions from Neovim and can apply Pi-provided diffs to the current buffer.
+    Useful command: :Pi
+    Config: lua/plugins/pi-inline.lua
+    Keymaps:
+      <leader>pp opens Pi Inline.
+      <leader>pc clears Pi Inline ghost text.
+      <leader>pC cancels the active Pi request.
+      <leader>ps selects a Pi session.
+      <leader>pS clears the selected Pi session.
+
 Configured LSP servers:
 
 1. lua_ls for Lua.
@@ -128,3 +157,7 @@ Useful commands:
 3. :Mason manages language servers and external tools.
 4. :TSInstallConfigured installs the configured Treesitter parsers.
 5. :checkhealth checks Neovim and plugin health.
+6. :Neotree opens Neo-tree.
+7. <leader>n toggles Neo-tree.
+8. :Pi opens Pi Inline.
+9. <leader>pp opens Pi Inline.
