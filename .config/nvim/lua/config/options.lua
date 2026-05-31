@@ -13,7 +13,7 @@ opt.shiftwidth = 2
 opt.tabstop = 2
 opt.smartindent = true
 
-opt.wrap = false
+opt.wrap = true
 opt.termguicolors = true
 opt.scrolloff = 8
 opt.sidescrolloff = 8

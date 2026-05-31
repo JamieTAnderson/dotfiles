@@ -114,6 +114,15 @@ Pinned plugin versions live in lazy-lock.json.
       <leader>ps selects a Pi session.
       <leader>pS clears the selected Pi session.
 
+22. ThePrimeagen/99
+    Purpose: Provides AI-assisted project search and visual-selection workflows from Neovim.
+    Config: lua/plugins/primeagen-99.lua
+    Provider: OpenCode with model openai/gpt-5.5.
+    Keymaps:
+      <leader>9s asks 99 to search the project.
+      <leader>9v asks 99 about the current visual selection.
+      <leader>9x stops active 99 requests.
+
 Configured LSP servers:
 
 1. lua_ls for Lua.
@@ -161,3 +170,6 @@ Useful commands:
 7. <leader>n toggles Neo-tree.
 8. :Pi opens Pi Inline.
 9. <leader>pp opens Pi Inline.
+10. <leader>9s asks 99 to search the project.
+11. <leader>9v asks 99 about a visual selection.
+12. <leader>9x stops active 99 requests.

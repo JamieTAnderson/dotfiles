@@ -37,6 +37,7 @@ This config uses:
 - Gitsigns for Git gutter markers
 - [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim) for a file explorer
 - local `pi-inline.nvim` for asking Pi questions from Neovim
+- [99](https://github.com/ThePrimeagen/99) for Neovim AI search and visual-selection workflows
 
 See `.config/nvim/PLUGINS.txt` for the full plugin list and what each plugin does.
 
@@ -46,6 +47,7 @@ Recommended command line tools:
 - `ripgrep` for Telescope live grep
 - `tree-sitter` CLI 0.26.1 or newer for Treesitter parser installs
 - `pi` for Pi Inline
+- `opencode` for 99's OpenCode provider. This config sets 99's model to `openai/gpt-5.5`.
 - a C compiler for Treesitter parser builds
 
 On first launch, lazy.nvim will bootstrap itself and install plugins. If the
@@ -66,6 +68,9 @@ Otherwise, install the CLI and run `:TSInstallConfigured`.
 - `<leader>n` - toggle Neo-tree
 - `<leader>nf` - reveal the current file in Neo-tree
 - `:Pi` / `<leader>pp` - open Pi Inline
+- `<leader>9s` - ask 99 to search the project
+- `<leader>9v` - ask 99 about a visual selection
+- `<leader>9x` - stop active 99 requests
 
 Language servers currently configured:
 
