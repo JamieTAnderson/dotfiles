@@ -14,6 +14,9 @@ return {
     },
     opts = {
       defaults = {
+        preview = {
+          treesitter = false,
+        },
         mappings = {
           i = {
             ["<C-u>"] = false,
