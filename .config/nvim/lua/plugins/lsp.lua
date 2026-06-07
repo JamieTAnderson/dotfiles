@@ -41,6 +41,7 @@ return {
         bashls = {},
         jsonls = {},
         yamlls = {},
+        terraformls = {},
       }
 
       local ensure_installed = {}

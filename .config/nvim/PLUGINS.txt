@@ -133,6 +133,7 @@ Configured LSP servers:
 6. bashls for Bash.
 7. jsonls for JSON.
 8. yamlls for YAML.
+9. terraformls for Terraform and HCL.
 
 gopls is only auto-installed when the go executable is available.
 
@@ -143,21 +144,22 @@ Configured Treesitter parsers:
 3. go
 4. gomod
 5. gosum
-6. html
-7. javascript
-8. json
-9. lua
-10. markdown
-11. markdown_inline
-12. python
-13. query
-14. rust
-15. toml
-16. tsx
-17. typescript
-18. vim
-19. vimdoc
-20. yaml
+6. hcl
+7. html
+8. javascript
+9. json
+10. lua
+11. markdown
+12. markdown_inline
+13. python
+14. query
+15. rust
+16. toml
+17. tsx
+18. typescript
+19. vim
+20. vimdoc
+21. yaml
 
 Useful commands:
 

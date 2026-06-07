@@ -82,6 +82,7 @@ Language servers currently configured:
 - Bash: `bashls`
 - JSON: `jsonls`
 - YAML: `yamlls`
+- Terraform/HCL: `terraformls`
 
 `gopls` is only auto-installed when the `go` executable is available. Install Go
 first, then open Neovim and run `:MasonInstall gopls` or `:Lazy sync`.
