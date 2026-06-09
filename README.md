@@ -38,6 +38,7 @@ This config uses:
 - [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim) for a file explorer
 - local `pi-inline.nvim` for asking Pi questions from Neovim
 - [99](https://github.com/ThePrimeagen/99) for Neovim AI search and visual-selection workflows
+- OpenCode global LSP config that reuses Mason-installed Neovim language servers
 
 See `.config/nvim/PLUGINS.txt` for the full plugin list and what each plugin does.
 
@@ -89,12 +90,32 @@ first, then open Neovim and run `:MasonInstall gopls` or `:Lazy sync`.
 
 Install additional language servers from `:Mason`, then add them in `.config/nvim/lua/plugins/lsp.lua`.
 
+## OpenCode
+
+The installer links `.config/opencode` to `~/.config/opencode`. Its global
+`opencode.json` enables LSP support and points OpenCode at the same
+Mason-installed language server binaries used by Neovim:
+
+- Lua: `lua-language-server`
+- TypeScript/JavaScript: `typescript-language-server`
+- Python: `pyright-langserver`
+- Go: `gopls`
+- Rust: `rust-analyzer`
+- Bash: `bash-language-server`
+- JSON: `vscode-json-language-server`
+- YAML: `yaml-language-server`
+- Terraform: `terraform-ls`
+
+After changing OpenCode config, restart OpenCode. Running sessions keep using
+the config they loaded at startup.
+
 ## Layout
 
 ```text
 .
 ├── .bash_aliases    # Bash aliases
-├── .config/nvim/   # Neovim config
-├── install.sh      # symlink installer
+├── .config/nvim/     # Neovim config
+├── .config/opencode/ # OpenCode config
+├── install.sh        # symlink installer
 └── README.md
 ```

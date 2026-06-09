@@ -28,6 +28,11 @@ return {
     config = function()
       require("99").setup({
         model = "openai/gpt-5.5",
+        completion = {
+          custom_rules = {
+            "~/.config/opencode/skills",
+          },
+        },
       })
     end,
   },

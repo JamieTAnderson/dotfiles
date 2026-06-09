@@ -1,0 +1,44 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "lsp": {
+    "lua-ls": {
+      "command": ["{env:HOME}/.local/share/nvim/mason/bin/lua-language-server"],
+      "extensions": [".lua"]
+    },
+    "typescript": {
+      "command": ["{env:HOME}/.local/share/nvim/mason/bin/typescript-language-server", "--stdio"],
+      "extensions": [".ts", ".tsx", ".js", ".jsx", ".mjs", ".cjs", ".mts", ".cts"]
+    },
+    "pyright": {
+      "command": ["{env:HOME}/.local/share/nvim/mason/bin/pyright-langserver", "--stdio"],
+      "extensions": [".py", ".pyi"]
+    },
+    "gopls": {
+      "command": ["{env:HOME}/.local/share/nvim/mason/bin/gopls"],
+      "extensions": [".go"]
+    },
+    "rust": {
+      "command": ["{env:HOME}/.local/share/nvim/mason/bin/rust-analyzer"],
+      "extensions": [".rs"]
+    },
+    "bash": {
+      "command": ["{env:HOME}/.local/share/nvim/mason/bin/bash-language-server", "start"],
+      "extensions": [".sh", ".bash", ".zsh", ".ksh"]
+    },
+    "json-ls": {
+      "command": ["{env:HOME}/.local/share/nvim/mason/bin/vscode-json-language-server", "--stdio"],
+      "extensions": [".json", ".jsonc"]
+    },
+    "yaml-ls": {
+      "command": ["{env:HOME}/.local/share/nvim/mason/bin/yaml-language-server", "--stdio"],
+      "extensions": [".yaml", ".yml"]
+    },
+    "terraform": {
+      "command": ["{env:HOME}/.local/share/nvim/mason/bin/terraform-ls", "serve"],
+      "extensions": [".tf", ".tfvars"]
+    }
+  },
+  "plugin": [
+    "superpowers@git+https://github.com/obra/superpowers.git"
+  ]
+}
