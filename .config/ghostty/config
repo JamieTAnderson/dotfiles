@@ -1,0 +1,57 @@
+keybind = cmd+a=text:\x01
+keybind = cmd+b=text:\x02
+keybind = cmd+c=text:\x03
+keybind = cmd+d=text:\x04
+keybind = cmd+e=text:\x05
+keybind = cmd+f=text:\x06
+keybind = cmd+g=text:\x07
+keybind = cmd+h=text:\x08
+keybind = cmd+i=text:\x09
+keybind = cmd+j=text:\x0A
+keybind = cmd+k=text:\x0B
+keybind = cmd+l=text:\x0C
+keybind = cmd+m=text:\x0D
+keybind = cmd+n=text:\x0E
+keybind = cmd+o=text:\x0F
+keybind = cmd+p=text:\x10
+keybind = cmd+q=text:\x11
+keybind = cmd+r=text:\x12
+keybind = cmd+s=text:\x13
+keybind = cmd+u=text:\x15
+keybind = cmd+w=text:\x17
+keybind = cmd+x=text:\x18
+keybind = cmd+y=text:\x19
+keybind = cmd+z=text:\x1A
+
+# tmux integration - send save-buffer command
+keybind = cmd+s=text:\x01\x73
+
+# tmux prefix to toggle zoom on current pane
+keybind = cmd+b=text:\x01\x7a
+
+# aesthetics
+theme = TokyoNight Night
+keybind = cmd+shift+j=goto_split:down
+background-opacity = 0.95
+background-blur=16
+macos-titlebar-style = hidden
+
+# typography
+font-size=14
+font-thicken=true
+font-thicken-strength=1
+adjust-cell-height=1
+
+# space between text and window edges (in points)
+window-padding-x = 12
+window-padding-y = 8
+
+# or asymmetric: left,right and top,bottom
+window-padding-x = 12,8
+window-padding-y = 4,8
+
+# distribute leftover space evenly instead of pinning to top-left
+window-padding-balance = true
+
+# fill the padding with the background color vs. extending edge cells
+window-padding-color = extend

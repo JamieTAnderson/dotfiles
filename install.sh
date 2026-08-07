@@ -26,6 +26,8 @@ link_path() {
 }
 
 link_path "$dotfiles_dir/.config/nvim" "$config_home/nvim"
+link_path "$dotfiles_dir/.config/ghostty" "$config_home/ghostty"
+link_path "$dotfiles_dir/.config/aerospace" "$config_home/aerospace"
 link_path "$dotfiles_dir/.config/opencode" "$config_home/opencode"
 link_path "$dotfiles_dir/.bash_aliases" "$HOME/.bash_aliases"
 
