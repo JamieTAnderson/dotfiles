@@ -31,4 +31,8 @@ link_path "$dotfiles_dir/.config/aerospace" "$config_home/aerospace"
 link_path "$dotfiles_dir/.config/opencode" "$config_home/opencode"
 link_path "$dotfiles_dir/.bash_aliases" "$HOME/.bash_aliases"
 
+vscode_user_dir="$HOME/Library/Application Support/Code/User"
+link_path "$dotfiles_dir/vscode/settings.json" "$vscode_user_dir/settings.json"
+link_path "$dotfiles_dir/vscode/keybindings.json" "$vscode_user_dir/keybindings.json"
+
 printf '\nDone. Open Neovim with: nvim or vi. OpenCode config is linked globally.\n'

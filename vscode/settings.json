@@ -1,0 +1,24 @@
+{
+    "dev.containers.dockerPath": "podman",
+    "editor.minimap.enabled": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "terminal.integrated.stickyScroll.enabled": false,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "telemetry.editStats.enabled": false,
+    "telemetry.feedback.enabled": false,
+    "[typescriptreact]": {
+
+    },
+    "claudeCode.preferredLocation": "panel",
+    "hediet.vscode-drawio.resizeImages": null,
+    "hediet.vscode-drawio.customLibraries": [
+        {
+            "libName": "Simple Icons",
+            "url": "https://github.com/mondeja/simple-icons-drawio/releases/download/16.14.0/simple-icons.xml"
+        }
+    ],
+    "hediet.vscode-drawio.appearance": "dark",
+    "chat.viewSessions.orientation": "stacked",
+    "explorer.confirmDragAndDrop": false,
+    "editor.rulers": [80]
+}

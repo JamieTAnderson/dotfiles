@@ -109,13 +109,27 @@ Mason-installed language server binaries used by Neovim:
 After changing OpenCode config, restart OpenCode. Running sessions keep using
 the config they loaded at startup.
 
+## VSCode
+
+The installer links `vscode/settings.json` and `vscode/keybindings.json` into
+`~/Library/Application Support/Code/User/`. The keybindings assume the
+[VSCodeVim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
+extension:
+
+- `Cmd+O` - vim `Ctrl-O` (one-shot normal mode from insert, jumplist-back in
+  normal), matching the ghostty `cmd+o` mapping
+- `Cmd+J` - toggle focus between the editor and the integrated terminal
+
 ## Layout
 
 ```text
 .
-├── .bash_aliases    # Bash aliases
-├── .config/nvim/     # Neovim config
-├── .config/opencode/ # OpenCode config
-├── install.sh        # symlink installer
+├── .bash_aliases         # Bash aliases
+├── .config/aerospace/    # AeroSpace config
+├── .config/ghostty/      # Ghostty config
+├── .config/nvim/         # Neovim config
+├── .config/opencode/     # OpenCode config
+├── vscode/               # VSCode settings and keybindings
+├── install.sh            # symlink installer
 └── README.md
 ```
