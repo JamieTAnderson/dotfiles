@@ -31,3 +31,5 @@ opt.undofile = true
 opt.updatetime = 250
 opt.timeoutlen = 300
 
+opt.exrc = true -- load project-local .nvim.lua from cwd (trusted per-file)
+

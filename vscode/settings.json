@@ -20,5 +20,13 @@
     "hediet.vscode-drawio.appearance": "dark",
     "chat.viewSessions.orientation": "stacked",
     "explorer.confirmDragAndDrop": false,
-    "editor.rulers": [80]
+    "editor.rulers": [
+        80
+    ],
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    }
 }
