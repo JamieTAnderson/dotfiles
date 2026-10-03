@@ -1,0 +1,24 @@
+{
+    "dev.containers.dockerPath": "podman",
+    "editor.minimap.enabled": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "terminal.integrated.stickyScroll.enabled": false,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "telemetry.editStats.enabled": false,
+    "telemetry.feedback.enabled": false,
+    "claudeCode.preferredLocation": "panel",
+    "explorer.confirmDragAndDrop": false,
+    "editor.rulers": [
+        80
+    ],
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "files.exclude": {
+        "**/.git": false
+    },
+    "go.toolsManagement.autoUpdate": true
+}

@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+
+# Tile windows automatically.
+yabai -m config layout bsp
+
+# Match the spacing used by the AeroSpace config.
+yabai -m config top_padding 8
+yabai -m config bottom_padding 8
+yabai -m config left_padding 8
+yabai -m config right_padding 8
+yabai -m config window_gap 8

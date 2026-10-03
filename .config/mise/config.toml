@@ -1,0 +1,8 @@
+[env]
+GOPATH = "{{env.HOME}}/.local/share/go"
+
+[settings]
+idiomatic_version_file_enable_tools = ["dotnet"]
+
+[settings.dotnet]
+cli_telemetry_optout = true

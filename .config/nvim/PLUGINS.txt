@@ -1,0 +1,19 @@
+Neovim plugin guide
+
+Commands:
+  :Lazy                 Inspect, install, and update plugins.
+  :Mason                Manage language servers and external tools.
+  :TSInstallConfigured  Install configured parsers after installing the tree-sitter CLI.
+  :checkhealth          Diagnose configuration and dependency issues.
+  :PluginDocs           Open this guide.
+
+Press Space (the leader key) and wait to see available mappings with which-key.
+
+Configuration paths, relative to this Neovim config directory:
+  lua/plugins/               Plugin definitions, options, and plugin keybindings.
+  lua/plugins/lsp.lua        Language servers and LSP keybindings.
+  lua/plugins/treesitter.lua  Parsers and filetype mappings.
+  lua/config/keymaps.lua     General keybindings.
+  lazy-lock.json             Pinned plugin revisions.
+
+Install Go before installing gopls through :Mason.

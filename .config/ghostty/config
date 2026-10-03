@@ -1,0 +1,46 @@
+# Cmd shortcuts send control characters to the terminal.
+keybind = cmd+a=text:\x01
+keybind = cmd+c=text:\x03
+keybind = cmd+d=text:\x04
+keybind = cmd+e=text:\x05
+keybind = cmd+f=text:\x06
+keybind = cmd+g=text:\x07
+keybind = cmd+h=text:\x08
+keybind = cmd+i=text:\x09
+keybind = cmd+j=text:\x0A
+keybind = cmd+k=text:\x0B
+keybind = cmd+l=text:\x0C
+keybind = cmd+m=text:\x0D
+keybind = cmd+n=text:\x0E
+keybind = cmd+o=text:\x0F
+keybind = cmd+p=text:\x10
+keybind = cmd+q=text:\x11
+keybind = cmd+r=text:\x12
+keybind = cmd+u=text:\x15
+keybind = cmd+w=text:\x17
+keybind = cmd+x=text:\x18
+keybind = cmd+y=text:\x19
+keybind = cmd+z=text:\x1A
+
+# tmux shortcuts assume a Ctrl-A prefix: s and z.
+keybind = cmd+s=text:\x01\x73
+keybind = cmd+b=text:\x01\x7a
+keybind = cmd+shift+j=goto_split:down
+
+# Appearance
+theme = TokyoNight Night
+background-opacity = 0.95
+background-blur = 16
+macos-titlebar-style = hidden
+
+# Typography
+font-size = 14
+font-thicken = true
+font-thicken-strength = 1
+adjust-cell-height = 1
+
+# Padding in points: left,right and top,bottom.
+window-padding-x = 12,8
+window-padding-y = 4,8
+window-padding-balance = true
+window-padding-color = extend
