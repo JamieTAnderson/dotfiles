@@ -1,6 +1,9 @@
 [env]
 GOPATH = "{{env.HOME}}/.local/share/go"
-_.path = ["{{env.XDG_DATA_HOME | default(value=env.HOME ~ '/.local/share')}}/nvim/mason/bin"]
+_.path = [
+  "{{env.HOME}}/.local/bin",
+  "{{env.XDG_DATA_HOME | default(value=env.HOME ~ '/.local/share')}}/nvim/mason/bin",
+]
 
 [settings]
 idiomatic_version_file_enable_tools = ["dotnet"]

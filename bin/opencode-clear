@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+usage='Usage: opencode-clear [--dry-run]'
+case "$*" in
+  ''|--dry-run) ;;
+  -h|--help)
+    printf '%s\n' "$usage" 'Deletes the local OpenCode database. Close OpenCode first.'
+    exit 0 ;;
+  *) printf '%s\n' "$usage" >&2; exit 1 ;;
+esac
+
+db="$(opencode db path)"
+if [[ "$db" != /* ]]; then
+  printf 'Invalid database path: %s\n' "$db" >&2
+  exit 1
+fi
+
+if [[ "${1:-}" == --dry-run ]]; then
+  printf 'Would delete: %s\n' "$db" "$db-wal" "$db-shm" "$db-journal"
+else
+  rm -f -- "$db" "$db-wal" "$db-shm" "$db-journal"
+  printf 'OpenCode database deleted.\n'
+fi

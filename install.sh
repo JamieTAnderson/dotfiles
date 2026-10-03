@@ -15,7 +15,6 @@ link_path() {
 
   mkdir -p "$(dirname "$target_path")"
 
-  # A parent directory may already link into this checkout.
   if [ "$source_path" -ef "$target_path" ]; then
     printf 'Already linked: %s\n' "$target_path"
     return
@@ -39,4 +38,9 @@ link_path "$dotfiles_dir/.config/skhd" "$config_home/skhd"
 link_path "$dotfiles_dir/.config/opencode/opencode.json" "$config_home/opencode/opencode.json"
 link_path "$dotfiles_dir/.bash_aliases" "$HOME/.bash_aliases"
 
-printf '\nDone. Configuration files are linked.\n'
+for script_path in "$dotfiles_dir"/bin/*; do
+  [ -f "$script_path" ] || continue
+  link_path "$script_path" "$HOME/.local/bin/${script_path##*/}"
+done
+
+printf '\nDone. Configuration files and scripts are linked.\n'
